@@ -12,6 +12,11 @@ $(document).ready(function() {
   }
   setTimeout(nextScene, 50000);
 
+  function hideInstructions() {
+    document.getElementById('instructions').setAttribute('visible', 'false');
+  }
+  setTimeout(hideInstructions, 20000);
+
 
   var setSound1 = function() {
     entity.setAttribute('sound', {
@@ -72,7 +77,5 @@ $(document).ready(function() {
   };
   setTimeout(setSound5, 40000);
 
-//what's wrong with the audio, why is there a clip at the end?
-  //and is it increasing in volume?
 
 });

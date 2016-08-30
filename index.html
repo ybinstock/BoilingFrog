@@ -38,16 +38,25 @@
   <a-entity id="water-sound"
   sound="src: boilingwater.mp3; autoplay: true; loop: true; volume: 1;"></a-entity>
 
-    <!--instructions-->
-    <a-entity>
-      <a-curvedimage id="slide slide-1" height="6" radius="6" theta-length="60" theta-start="-25"
-                     scale="0.8 0.8 0.8" src="slides/instructions.png" visible="true">
-        <a-animation attribute="visible" begin="4000" to="false"></a-animation>
-      </a-curvedimage>
 
+    <!--boiling frog story-->
+    <a-entity>
+      <a-curvedimage id="slide story" height="6" radius="6" theta-length="60" theta-start="-30"
+                     scale="0.8 0.8 0.8" src="slides/boilingfrogstory.png" visible="true">
+        <a-animation attribute="visible" begin="15000" to="false"></a-animation>
+      </a-curvedimage>
     </a-entity>
 
-  <!--top of pot-->
+
+    <!--instructions-->
+    <a-entity id="instructions">
+      <a-curvedimage id="slide" height="6" radius="6" theta-length="60" theta-start="-30"
+                     scale="0.8 0.8 0.8" src="slides/instructions.png" visible="false">
+        <a-animation attribute="visible" begin="15200" to="true"></a-animation>
+      </a-curvedimage>
+    </a-entity>
+
+    <!--top of pot-->
   <a-plane src="slides/silver.png" position="0 2.4 0" height="11" width="11" rotation="90 90 0"
   material="roughness: 1; metalness: 1"></a-plane>
 
