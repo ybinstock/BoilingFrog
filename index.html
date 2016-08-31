@@ -26,18 +26,19 @@
   </a-entity>
 
 
-
   <a-entity id="scene2" visible="true">
-  <a-entity position="0 0 1" rotation="0 180 0 ">
-  <a-camera wasd-controls="enabled: false"></a-camera>
-  </a-entity>
+    <a-entity position="0 0 1" rotation="0 180 0 ">
+      <a-camera wasd-controls="enabled: false"></a-camera>
+    </a-entity>
 
 
-  <a-sky color="white"></a-sky>
+    <a-sky color="white"></a-sky>
 
-  <a-entity id="water-sound"
-  sound="src: boilingwater.mp3; autoplay: true; loop: true; volume: 1;"></a-entity>
+    <a-entity id="water-sound"
+              sound="src: boilingwater.mp3; autoplay: true; loop: true; volume: 1;"></a-entity>
 
+    <a-entity id="script"
+              sound="src: script.mp3; volume: 5;"></a-entity>
 
     <!--boiling frog story-->
     <a-entity>
@@ -52,142 +53,142 @@
     <a-entity id="instructions">
       <a-curvedimage id="slide" height="6" radius="6" theta-length="60" theta-start="-30"
                      scale="0.8 0.8 0.8" src="slides/instructions.png" visible="false">
-        <a-animation attribute="visible" begin="15200" to="true"></a-animation>
+        <a-animation attribute="visible" begin="15100" to="true"></a-animation>
       </a-curvedimage>
     </a-entity>
 
     <!--top of pot-->
-  <a-plane src="slides/silver.png" position="0 2.4 0" height="11" width="11" rotation="90 90 0"
-  material="roughness: 1; metalness: 1"></a-plane>
+    <a-plane src="slides/silver.png" position="0 2.4 0" height="11" width="11" rotation="90 90 0"
+             material="roughness: 1; metalness: 1"></a-plane>
 
-  <!--water-->
-  <a-ocean width="10" depth="10" density="1" opacity="1" position="0 -2 0"
-  ocean="width:50;depth:50;density:1;opacity:1" rotation="-90 0 0"></a-ocean>
+    <!--water-->
+    <a-ocean width="10" depth="10" density="1" opacity="1" position="0 -2 0"
+             ocean="width:50;depth:50;density:1;opacity:1" rotation="-90 0 0"></a-ocean>
 
-  <a-ocean width="10" depth="10" density="5" opacity="1" position="0 -2 0"
-  ocean="width:50;depth:50;density:5;opacity:1" rotation="-90 0 0" visible="false">
-  <a-animation attribute="visible" begin="4000" to="true"></a-animation>
-  </a-ocean>
+    <a-ocean width="10" depth="10" density="5" opacity="1" position="0 -2 0"
+             ocean="width:50;depth:50;density:5;opacity:1" rotation="-90 0 0" visible="false">
+      <a-animation attribute="visible" begin="25000" to="true"></a-animation>
+    </a-ocean>
 
-  <a-ocean width="10" depth="10" density="10" opacity="1" position="0 -2 0"
-  ocean="width:50;depth:50;density:10;opacity:1" rotation="-90 0 0" visible="false">
-  <a-animation attribute="visible" begin="8000" to="true"></a-animation>
-  </a-ocean>
+    <a-ocean width="10" depth="10" density="10" opacity="1" position="0 -2 0"
+             ocean="width:50;depth:50;density:10;opacity:1" rotation="-90 0 0" visible="false">
+      <a-animation attribute="visible" begin="33000" to="true"></a-animation>
+    </a-ocean>
 
-  <a-ocean width="10" depth="10" density="15" opacity="1" position="0 -2 0"
-  ocean="width:50;depth:50;density:15;opacity:1" rotation="-90 0 0" visible="false">
-  <a-animation attribute="visible" begin="12000" to="true"></a-animation>
-  </a-ocean>
+    <a-ocean width="10" depth="10" density="15" opacity="1" position="0 -2 0"
+             ocean="width:50;depth:50;density:15;opacity:1" rotation="-90 0 0" visible="false">
+      <a-animation attribute="visible" begin="41000" to="true"></a-animation>
+    </a-ocean>
 
-  <a-ocean width="10" depth="10" density="20" opacity="1" position="0 -2 0"
-  ocean="width:50;depth:50;density:20;opacity:1" rotation="-90 0 0" visible="false">
-  <a-animation attribute="visible" begin="16000" to="true"></a-animation>
-  </a-ocean>
+    <a-ocean width="10" depth="10" density="20" opacity="1" position="0 -2 0"
+             ocean="width:50;depth:50;density:20;opacity:1" rotation="-90 0 0" visible="false">
+      <a-animation attribute="visible" begin="49000" to="true"></a-animation>
+    </a-ocean>
 
-  <a-ocean width="10" depth="10" density="30" opacity="1" position="0 -2 0"
-  ocean="width:50;depth:50;density:10;opacity:1" rotation="-90 0 0" visible="false">
-  <a-animation attribute="visible" begin="20000" to="true"></a-animation>
-  </a-ocean>
+    <a-ocean width="10" depth="10" density="30" opacity="1" position="0 -2 0"
+             ocean="width:50;depth:50;density:10;opacity:1" rotation="-90 0 0" visible="false">
+      <a-animation attribute="visible" begin="57000" to="true"></a-animation>
+    </a-ocean>
 
-  <a-ocean width="10" depth="10" density="20" opacity="1" position="0 -2 0"
-  ocean="width:50;depth:50;density:20;opacity:1" rotation="-90 0 0" visible="false">
-  <a-animation attribute="visible" begin="24000" to="true"></a-animation>
-  </a-ocean>
+    <a-ocean width="10" depth="10" density="20" opacity="1" position="0 -2 0"
+             ocean="width:50;depth:50;density:20;opacity:1" rotation="-90 0 0" visible="false">
+      <a-animation attribute="visible" begin="65000" to="true"></a-animation>
+    </a-ocean>
 
-  <a-ocean width="10" depth="10" density="25" opacity="1" position="0 -2 0"
-  ocean="width:50;depth:50;density:25;opacity:1" rotation="-90 0 0" visible="false">
-  <a-animation attribute="visible" begin="28000" to="true"></a-animation>
-  </a-ocean>
+    <a-ocean width="10" depth="10" density="25" opacity="1" position="0 -2 0"
+             ocean="width:50;depth:50;density:25;opacity:1" rotation="-90 0 0" visible="false">
+      <a-animation attribute="visible" begin="73000" to="true"></a-animation>
+    </a-ocean>
 
-  <a-ocean width="10" depth="10" density="30" opacity="1" position="0 -2 0"
-  ocean="width:50;depth:50;density:30;opacity:1" rotation="-90 0 0" visible="false">
-  <a-animation attribute="visible" begin="32000" to="true"></a-animation>
-  </a-ocean>
+    <a-ocean width="10" depth="10" density="30" opacity="1" position="0 -2 0"
+             ocean="width:50;depth:50;density:30;opacity:1" rotation="-90 0 0" visible="false">
+      <a-animation attribute="visible" begin="81000" to="true"></a-animation>
+    </a-ocean>
 
-  <a-ocean width="10" depth="10" density="35" opacity="1" position="0 -2 0"
-  ocean="width:50;depth:50;density:35;opacity:1" rotation="-90 0 0" visible="false">
-  <a-animation attribute="visible" begin="36000" to="true"></a-animation>
-  </a-ocean>
+    <a-ocean width="10" depth="10" density="35" opacity="1" position="0 -2 0"
+             ocean="width:50;depth:50;density:35;opacity:1" rotation="-90 0 0" visible="false">
+      <a-animation attribute="visible" begin="89000" to="true"></a-animation>
+    </a-ocean>
 
-  <a-ocean width="10" depth="10" density="40" opacity="1" position="0 -2 0"
-  ocean="width:50;depth:50;density:40;opacity:1" rotation="-90 0 0" visible="false">
-  <a-animation attribute="visible" begin="40000" to="true"></a-animation>
-  </a-ocean>
+    <a-ocean width="10" depth="10" density="40" opacity="1" position="0 -2 0"
+             ocean="width:50;depth:50;density:40;opacity:1" rotation="-90 0 0" visible="false">
+      <a-animation attribute="visible" begin="97000" to="true"></a-animation>
+    </a-ocean>
 
-  <a-ocean width="10" depth="10" density="45" opacity="1" position="0 -2 0"
-  ocean="width:50;depth:50;density:45;opacity:1" rotation="-90 0 0" visible="false">
-  <a-animation attribute="visible" begin="44000" to="true"></a-animation>
-  </a-ocean>
+    <a-ocean width="10" depth="10" density="45" opacity="1" position="0 -2 0"
+             ocean="width:50;depth:50;density:45;opacity:1" rotation="-90 0 0" visible="false">
+      <a-animation attribute="visible" begin="105000" to="true"></a-animation>
+    </a-ocean>
 
-  <a-ocean width="10" depth="10" density="50" opacity="1" position="0 -2 0"
-  ocean="width:50;depth:50;density:50;opacity:1" rotation="-90 0 0" visible="false">
-  <a-animation attribute="visible" begin="44000" to="true"></a-animation>
-  </a-ocean>
+    <a-ocean width="10" depth="10" density="50" opacity="1" position="0 -2 0"
+             ocean="width:50;depth:50;density:50;opacity:1" rotation="-90 0 0" visible="false">
+      <a-animation attribute="visible" begin="113000" to="true"></a-animation>
+    </a-ocean>
 
-  <!--pot-->
-  <a-curvedimage color="silver" height="6.0" radius="6.5" theta-length="360"
-  rotation="0 100 0" scale="0.8 0.8 0.8" position="0 0 0"></a-curvedimage>
+    <!--pot-->
+    <a-curvedimage color="silver" height="6.0" radius="6.5" theta-length="360"
+                   rotation="0 100 0" scale="0.8 0.8 0.8" position="0 0 0"></a-curvedimage>
 
-  <!--slides-->
-  <a-curvedimage id=" slide-1" class="slide" height="6" radius="6" theta-length="30" theta-start="0"
-  scale="0.8 0.8 0.8" src="slides/hansen.jpg" visible="false" material="metalness: 1">
-  <a-animation attribute="visible" begin="4000" to="true"></a-animation>
-  </a-curvedimage>
+    <!--slides-->
+    <a-curvedimage id=" slide-1" class="slide" height="6" radius="6" theta-length="30" theta-start="0"
+                   scale="0.8 0.8 0.8" src="slides/hansen.jpg" visible="false" material="metalness: 1">
+      <a-animation attribute="visible" begin="25000" to="true"></a-animation>
+    </a-curvedimage>
 
-  <a-curvedimage id="slide slide-2" height="6" radius="6" theta-length="30" theta-start="30"
-  scale="0.8 0.8 0.8" src="slides/exxonknew.jpg" visible="false">
-  <a-animation attribute="visible" begin="8000" to="true"></a-animation>
-  </a-curvedimage>
+    <a-curvedimage id="slide slide-2" height="6" radius="6" theta-length="30" theta-start="30"
+                   scale="0.8 0.8 0.8" src="slides/flood.jpg" visible="false">
+      <a-animation attribute="visible" begin="33000" to="true"></a-animation>
+    </a-curvedimage>
 
-  <a-curvedimage id="slide slide-3" height="6" radius="6" theta-length="30" theta-start="60"
-  scale="0.8 0.8 0.8" src="slides/drought.jpg" visible="false">
-  <a-animation attribute="visible" begin="12000" to="true"></a-animation>
-  </a-curvedimage>
+    <a-curvedimage id="slide slide-3" height="6" radius="6" theta-length="30" theta-start="60"
+                   scale="0.8 0.8 0.8" src="slides/climateactivism.jpg" visible="false">
+      <a-animation attribute="visible" begin="41000" to="true"></a-animation>
+    </a-curvedimage>
 
-  <a-curvedimage id="slide slide-4" height="6" radius="6" theta-length="30" theta-start="90"
-  scale="0.8 0.8 0.8" src="slides/fire.jpg" visible="false">
-  <a-animation attribute="visible" begin="16000" to="true"></a-animation>
-  </a-curvedimage>
+    <a-curvedimage id="slide slide-4" height="6" radius="6" theta-length="30" theta-start="90"
+                   scale="0.8 0.8 0.8" src="slides/algore.jpg" visible="false">
+      <a-animation attribute="visible" begin="49000" to="true"></a-animation>
+    </a-curvedimage>
 
-  <a-curvedimage id="slide slide-5" height="6" radius="6" theta-length="30" theta-start="120"
-  scale="0.8 0.8 0.8" src="slides/algore.jpg" visible="false">
-  <a-animation attribute="visible" begin="20000" to="true"></a-animation>
-  </a-curvedimage>
+    <a-curvedimage id="slide slide-5" height="6" radius="6" theta-length="30" theta-start="120"
+                   scale="0.8 0.8 0.8" src="slides/paristalks.jpg" visible="false">
+      <a-animation attribute="visible" begin="57000" to="true"></a-animation>
+    </a-curvedimage>
 
-  <a-curvedimage id="slide slide-6" height="6" radius="6" theta-length="30" theta-start="150"
-  scale="0.8 0.8 0.8" src="slides/climateactivism.jpg" visible="false">
-  <a-animation attribute="visible" begin="24000" to="true"></a-animation>
-  </a-curvedimage>
+    <a-curvedimage id="slide slide-6" height="6" radius="6" theta-length="30" theta-start="150"
+                   scale="0.8 0.8 0.8" src="slides/meltingice.jpeg" visible="false">
+      <a-animation attribute="visible" begin="65000" to="true"></a-animation>
+    </a-curvedimage>
 
-  <a-curvedimage id="slide slide-7" height="6" radius="6" theta-length="30" theta-start="180"
-  scale="0.8 0.8 0.8" src="slides/paristalks.jpg" visible="false">
-  <a-animation attribute="visible" begin="28000" to="true"></a-animation>
-  </a-curvedimage>
+    <a-curvedimage id="slide slide-7" height="6" radius="6" theta-length="30" theta-start="180"
+                   scale="0.8 0.8 0.8" src="slides/drought.jpg" visible="false">
+      <a-animation attribute="visible" begin="73000" to="true"></a-animation>
+    </a-curvedimage>
 
-  <a-curvedimage id="slide slide-8" height="6" radius="6" theta-length="30" theta-start="210"
-  scale="0.8 0.8 0.8" src="slides/climaterefugees.jpg" visible="false">
-  <a-animation attribute="visible" begin="32000" to="true"></a-animation>
-  </a-curvedimage>
+    <a-curvedimage id="slide slide-8" height="6" radius="6" theta-length="30" theta-start="210"
+                   scale="0.8 0.8 0.8" src="slides/climaterefugees.jpg" visible="false">
+      <a-animation attribute="visible" begin="81000" to="true"></a-animation>
+    </a-curvedimage>
 
-  <a-curvedimage id="slide slide-9" height="6" radius="6" theta-length="30" theta-start="240"
-  scale="0.8 0.8 0.8" src="slides/jamesinhofe.jpg" visible="false">
-  <a-animation attribute="visible" begin="36000" to="true"></a-animation>
-  </a-curvedimage>
+    <a-curvedimage id="slide slide-9" height="6" radius="6" theta-length="30" theta-start="240"
+                   scale="0.8 0.8 0.8" src="slides/exxonknew.jpg" visible="false">
+      <a-animation attribute="visible" begin="89000" to="true"></a-animation>
+    </a-curvedimage>
 
-  <a-curvedimage id="slide slide-10" height="6" radius="6" theta-length="30" theta-start="270"
-  scale="0.8 0.8 0.8" src="slides/meltingice.jpeg" visible="false">
-  <a-animation attribute="visible" begin="40000" to="true"></a-animation>
-  </a-curvedimage>
+    <a-curvedimage id="slide slide-10" height="6" radius="6" theta-length="30" theta-start="270"
+                   scale="0.8 0.8 0.8" src="slides/jamesinhofe.jpg" visible="false">
+      <a-animation attribute="visible" begin="94000" to="true"></a-animation>
+    </a-curvedimage>
 
-  <a-curvedimage id="slide slide-11" height="6" radius="6" theta-length="30" theta-start="300"
-  scale="0.8 0.8 0.8" src="slides/flood.jpg" visible="false">
-  <a-animation attribute="visible" begin="44000" to="true"></a-animation>
-  </a-curvedimage>
+    <a-curvedimage id="slide slide-11" height="6" radius="6" theta-length="30" theta-start="300"
+                   scale="0.8 0.8 0.8" src="slides/nytimes.png" visible="false">
+      <a-animation attribute="visible" begin="97000" to="true"></a-animation>
+    </a-curvedimage>
 
-  <a-curvedimage id="slide slide-12" height="6" radius="6" theta-length="30" theta-start="330"
-  scale="0.8 0.8 0.8" src="slides/nytimes.png" visible="false">
-  <a-animation attribute="visible" begin="48000" to="true"></a-animation>
-  </a-curvedimage>
+    <a-curvedimage id="slide slide-12" height="6" radius="6" theta-length="30" theta-start="330"
+                   scale="0.8 0.8 0.8" src="slides/fire.jpg" visible="false">
+      <a-animation attribute="visible" begin="100000" to="true"></a-animation>
+    </a-curvedimage>
 
   </a-entity>
 
