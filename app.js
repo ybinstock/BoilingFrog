@@ -4,6 +4,9 @@ $(document).ready(function() {
   var script = document.querySelector('#script');
   var taco = entity.getComputedAttribute('sound');
   var fogValue = document.querySelector('#fog');
+  var potBanging = document.querySelector('#pot-banging');
+  var frog = document.querySelector('#frog-sound');
+
   console.log('taco', taco);
   console.log('entity', entity);
 
@@ -14,6 +17,16 @@ $(document).ready(function() {
   }
 
   setTimeout(playScript, 25000);
+
+  //for potbanging
+  potBanging.pause();
+  function playPots() {
+    potBanging.play();
+  }
+
+  setTimeout(playPots, 6000);
+
+
 
   //to transition to end scene
   function nextScene() {

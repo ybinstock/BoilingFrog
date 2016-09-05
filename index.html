@@ -28,7 +28,10 @@
 
   <a-entity id="scene2" visible="true">
     <a-entity position="0 0 1" rotation="0 180 0 ">
-      <a-camera wasd-controls="enabled: false"></a-camera>
+      <a-camera wasd-controls="enabled: false">
+        <a-animation attribute="position" from="0 10 15" to="0 1 0" dur="10000"
+                     begin="0"></a-animation>
+      </a-camera>
     </a-entity>
 
 
@@ -36,6 +39,12 @@
 
     <a-entity id="water-sound"
               sound="src: boilingwater.mp3; autoplay: true; loop: true; volume: 1;"></a-entity>
+
+    <a-entity id="pot-banging"
+              sound="src: potbanging.mp3; autoplay: false; loop: false; volume: 1;"></a-entity>
+
+    <a-entity id="frog-sound"
+              sound="src:frogcroak.mp3; autoplay: false; loop: false; volume: 4;"></a-entity>
 
     <a-entity id="script"
               sound="src: script.mp3; volume: 5;"></a-entity>
@@ -127,7 +136,7 @@
 
     <!--pot-->
     <a-curvedimage color="silver" height="6.0" radius="6.5" theta-length="360"
-                   rotation="0 100 0" scale="0.8 0.8 0.8" position="0 0 0"></a-curvedimage>
+                   rotation="0 100 0" scale="0.8 0.8 0.8" position="0 0 0" metalness="1" roughness="1"></a-curvedimage>
 
     <!--slides-->
     <a-curvedimage id=" slide-1" class="slide" height="6" radius="6" theta-length="30" theta-start="0"
