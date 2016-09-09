@@ -7,8 +7,12 @@ $(document).ready(function() {
   var potBanging = document.querySelector('#pot-banging');
   var frog = document.querySelector('#frog-sound');
 
-  console.log('taco', taco);
-  console.log('entity', entity);
+  //For instructions
+  function hideInstructions() {
+    document.getElementById('instructions').setAttribute('visible', 'false');
+  }
+
+  setTimeout(hideInstructions, 24000);
 
 //for script
   script.pause();
@@ -24,9 +28,7 @@ $(document).ready(function() {
     potBanging.play();
   }
 
-  setTimeout(playPots, 6000);
-
-
+  setTimeout(playPots, 6600);
 
   //to transition to end scene
   function nextScene() {
@@ -35,13 +37,6 @@ $(document).ready(function() {
   }
 
   setTimeout(nextScene, 115000);
-
-  //For instructions
-  function hideInstructions() {
-    document.getElementById('instructions').setAttribute('visible', 'false');
-  }
-
-  setTimeout(hideInstructions, 24000);
 
   //Water audio
   entity.pause();
