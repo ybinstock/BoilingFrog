@@ -47,12 +47,12 @@
               sound="src:frogcroak.mp3; autoplay: false; loop: false; volume: 4;"></a-entity>
 
     <a-entity id="script"
-              sound="src: script.mp3; volume: 5;"></a-entity>
+              sound="src: newscript.mp3; volume: 3;"></a-entity>
 
     <!--boiling frog story-->
     <a-entity>
       <a-curvedimage id="slide story" height="6" radius="6" theta-length="60" theta-start="-30"
-                     scale="0.8 0.8 0.8" src="slides/boilingfrogstory.png" visible="true">
+                     scale="0.8 0.8 0.8" src="slides/boilingfrogstory.png" visible="true" >
         <a-animation attribute="visible" begin="17000" to="false"></a-animation>
       </a-curvedimage>
     </a-entity>
@@ -62,7 +62,7 @@
     <a-entity id="instructions">
       <a-curvedimage id="slide" height="6" radius="6" theta-length="60" theta-start="-30"
                      scale="0.8 0.8 0.8" src="slides/instructions.png" visible="false">
-        <a-animation attribute="visible" begin="17100" to="true"></a-animation>
+        <a-animation attribute="visible" begin="17000" to="true"></a-animation>
       </a-curvedimage>
     </a-entity>
 
@@ -145,7 +145,7 @@
     <!--slides-->
     <a-curvedimage id=" slide-1" class="slide" height="6" radius="6" theta-length="40" theta-start="360"
                    scale="0.8 0.8 0.8" src="slides/hansen.jpg" visible="false" material="metalness: 1">
-      <a-animation attribute="visible" begin="25000" to="true"></a-animation>
+      <a-animation attribute="visible" begin="24500" to="true"></a-animation>
     </a-curvedimage>
 
     <a-curvedimage id="slide slide-2" height="6" radius="6" theta-length="40" theta-start="330"

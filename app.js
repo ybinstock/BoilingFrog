@@ -28,7 +28,7 @@ $(document).ready(function() {
     potBanging.play();
   }
 
-  setTimeout(playPots, 6600);
+  setTimeout(playPots, 6900);
 
   //to transition to end scene
   function nextScene() {
